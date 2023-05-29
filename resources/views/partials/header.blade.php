@@ -30,7 +30,7 @@
                 </li>
                 @endforeach
                 <li class="nav-item">
-                    <div class="dropdown pt-2 ps-1">
+                    <div class="dropdown pt-1 ps-1">
                         <button class="btn btn-danger dropdown-toggle pt-2" type="button" id="adminMenu" data-bs-toggle="dropdown">
                             Admin
                         </button>
