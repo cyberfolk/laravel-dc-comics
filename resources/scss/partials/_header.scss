@@ -1,0 +1,40 @@
+@use "./variables" as *;
+
+header {
+    #strip {
+        background-color: $accenture;
+        color: $light;
+    }
+    li {
+        font-family: "Bahnschrift SemiBold";
+        font-size: 0.9rem !important;
+        color: $dark !important;
+        position: relative; // to use the active class
+        line-height: 7; // use the number without units, because I say the total height of the line is 6 font size
+        a {
+            text-transform: uppercase;
+        }
+    }
+
+    .active {
+        color: $accenture !important;
+    }
+
+    .active:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 6px;
+        width: 100%;
+        background-color: $accenture;
+    }
+    /* webkit solution */
+    ::-webkit-input-placeholder {
+        text-align: right;
+    }
+    /* mozilla solution */
+    input:-moz-placeholder {
+        text-align: right;
+    }
+}

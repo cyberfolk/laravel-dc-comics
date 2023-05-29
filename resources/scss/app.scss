@@ -1,0 +1,9 @@
+@use "./partials/variables" as *;
+@use "./partials/common";
+@use "./partials/header";
+@use "./partials/products";
+@use "./partials/footer";
+@use "./partials/jumbotron";
+@use "./partials/banner";
+
+@import "~bootstrap/scss/bootstrap";

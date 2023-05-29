@@ -1,0 +1,25 @@
+@use "./variables" as *;
+
+#products {
+    background-color: $dark;
+    .product {
+        img {
+            height: 180px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .title {
+            text-transform: uppercase;
+            color: $light;
+            font-size: 0.8rem;
+        }
+    }
+    button {
+        color: $light;
+        background-color: $accenture;
+        font-family: "Bahnschrift SemiBold";
+        font-weight: bold;
+        display: block;
+    }
+}

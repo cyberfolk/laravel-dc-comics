@@ -1,0 +1,19 @@
+@use "./variables" as *;
+#banner {
+    background-color: $accenture;
+
+    nav {
+        a {
+            font-family: "Bahnschrift SemiBold";
+            font-size: 0.9rem !important;
+            color: $light !important;
+            position: relative;
+            z-index: 1;
+            img {
+                margin: 2rem 0;
+                height: 60px;
+                padding-right: 1rem;
+            }
+        }
+    }
+}
