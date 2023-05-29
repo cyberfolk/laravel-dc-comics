@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Models\Comic;
 use Illuminate\Http\Request;
 
@@ -14,8 +15,9 @@ class ComicController extends Controller
      */
     public function index()
     {
+        $pages = config('pages');
         $comics = Comic::orderByDesc('id')->get();
-        return view('admin.comics.index', compact('comics'));
+        return view('admin.comics.index', compact('comics', 'pages'));
     }
 
     /**
@@ -25,7 +27,8 @@ class ComicController extends Controller
      */
     public function create()
     {
-        return view('admin.comics.create');
+        $pages = config('pages');
+        return view('admin.comics.create', compact('pages'));
     }
 
     /**
@@ -36,6 +39,7 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
+        $pages = config('pages');
         // TODO: validate the request fields
         // create a new instance
         $comic = new Comic();
@@ -49,7 +53,7 @@ class ComicController extends Controller
         $comic->type = $request->type;
         $comic->save();
         // return to a get route POST/REDIRECT/GET
-        return to_route('comics.index');
+        return to_route('comics.index', compact('pages'));
     }
 
     /**
@@ -60,7 +64,8 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        return view('admin.comics.show', compact('comic'));
+        $pages = config('pages');
+        return view('admin.comics.show', compact('comic', 'pages'));
     }
 
     /**
