@@ -66,4 +66,9 @@ class PageController extends Controller
         $pages = config('pages');
         return view('comics', compact('comics', 'pages', 'banner'));
     }
+    public function comic(Comic $comic)
+    {
+        //dd($lightsaber);
+        return view('comic', compact('comic'));
+    }
 }

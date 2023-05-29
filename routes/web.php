@@ -25,3 +25,7 @@ Route::get('/fans', [PageController::class, 'fans'])->name('fans');
 Route::get('/news', [PageController::class, 'news'])->name('news');
 Route::get('/shop', [PageController::class, 'shop'])->name('shop');
 Route::get('/tv', [PageController::class, 'tv'])->name('tv');
+
+Route::get('/comics/{comic}', [PageController::class, 'comic'])->name('comic');
+
+Route::resource('/admin/comics', ComicController::class);
