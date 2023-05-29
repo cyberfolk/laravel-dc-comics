@@ -1,5 +1,12 @@
 @use "./variables" as *;
 
 body {
-  background-color: $darkest;
+    background-color: $darkest;
+}
+
+h1,
+h2,
+a,
+button {
+    font-family: "Bahnschrift SemiBold";
 }
