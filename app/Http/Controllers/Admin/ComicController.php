@@ -15,7 +15,6 @@ class ComicController extends Controller
      */
     public function index()
     {
-        $pages = config('pages');
         $comics = Comic::orderByDesc('id')->get();
         return view('admin.comics.index', compact('comics', 'pages'));
     }
@@ -27,7 +26,6 @@ class ComicController extends Controller
      */
     public function create()
     {
-        $pages = config('pages');
         return view('admin.comics.create', compact('pages'));
     }
 
@@ -39,7 +37,6 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        $pages = config('pages');
         // TODO: validate the request fields
         // create a new instance
         $comic = new Comic();
@@ -64,7 +61,6 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        $pages = config('pages');
         return view('admin.comics.show', compact('comic', 'pages'));
     }
 

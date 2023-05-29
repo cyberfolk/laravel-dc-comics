@@ -23,7 +23,7 @@
             </a>
             <!-- /.navbar-brand -->
             <ul class="navbar-nav ms-auto gap-3 mt-2">
-                @foreach ($pages as $page)
+                @foreach (config('pages') as $page)
                 <li class="nav-item">
                     <a  class="nav-link {{Route::currentRouteName() === $page ? 'active' : '' }}" 
                         href="{{Route($page)}}">{{$page}}</a>
