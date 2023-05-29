@@ -2,9 +2,9 @@
 
 @section('content')
 
-<div class="container">
-    <div class="d-flex justify-content-between align-items-center">
-        <h1>Admin comics</h1>
+<div class="container py-5">
+    <div class="d-flex justify-content-between align-items-center py-5">
+        <h1 class="fw-bold"> Admin Comics</h1>
         <a href="{{route('comics.create')}}" class="btn btn-dark d-block">
             <i class="fas fa-plus-circle fa-sm fa-fw"></i>
             New Comic
