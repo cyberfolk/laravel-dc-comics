@@ -68,7 +68,7 @@ class PageController extends Controller
     }
     public function comic(Comic $comic)
     {
-        //dd($lightsaber);
-        return view('comic', compact('comic'));
+        $pages = config('pages');
+        return view('comic', compact('comic', 'pages'));
     }
 }
