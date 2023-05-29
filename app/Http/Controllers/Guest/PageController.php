@@ -10,65 +10,52 @@ class PageController extends Controller
 {
     public function tv()
     {
-        $pages = config('pages');
-        return view('tv', compact('pages'));
+        return view('tv');
     }
     public function shop()
     {
-        $pages = config('pages');
-        return view('shop', compact('pages'));
+        return view('shop');
     }
     public function news()
     {
-        $pages = config('pages');
-        return view('news', compact('pages'));
+        return view('news');
     }
     public function fans()
     {
-        $pages = config('pages');
-        return view('fans', compact('pages'));
+        return view('fans');
     }
     public function games()
     {
-        $pages = config('pages');
-        return view('games', compact('pages'));
+        return view('games');
     }
     public function videos()
     {
-        $pages = config('pages');
-        return view('videos', compact('pages'));
+        return view('videos');
     }
     public function movies()
     {
-        $pages = config('pages');
-        return view('movies', compact('pages'));
+        return view('movies');
     }
     public function characters()
     {
-        $pages = config('pages');
-        return view('characters', compact('pages'));
+        return view('characters');
     }
     public function collectibles()
     {
-        $pages = config('pages');
-        return view('collectibles', compact('pages'));
+        return view('collectibles');
     }
     public function home()
     {
-        $pages = config('pages');
-        return view('home', compact('pages'));
+        return view('home');
     }
     public function comics()
     {
         $comics = Comic::all();
-        $pages = config('pages');
         $banner = config('banner');
-        $pages = config('pages');
-        return view('comics', compact('comics', 'pages', 'banner'));
+        return view('comics', compact('comics', 'banner'));
     }
     public function comic(Comic $comic)
     {
-        $pages = config('pages');
-        return view('comic', compact('comic', 'pages'));
+        return view('comic', compact('comic'));
     }
 }

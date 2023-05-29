@@ -16,7 +16,7 @@ class ComicController extends Controller
     public function index()
     {
         $comics = Comic::orderByDesc('id')->get();
-        return view('admin.comics.index', compact('comics', 'pages'));
+        return view('admin.comics.index', compact('comics'));
     }
 
     /**
@@ -26,7 +26,7 @@ class ComicController extends Controller
      */
     public function create()
     {
-        return view('admin.comics.create', compact('pages'));
+        return view('admin.comics.create');
     }
 
     /**
@@ -50,7 +50,7 @@ class ComicController extends Controller
         $comic->type = $request->type;
         $comic->save();
         // return to a get route POST/REDIRECT/GET
-        return to_route('comics.index', compact('pages'));
+        return to_route('comics.index');
     }
 
     /**
@@ -61,7 +61,7 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        return view('admin.comics.show', compact('comic', 'pages'));
+        return view('admin.comics.show', compact('comic'));
     }
 
     /**
