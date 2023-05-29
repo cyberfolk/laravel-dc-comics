@@ -9,10 +9,13 @@ header {
         font-size: 0.9rem !important;
         color: $dark !important;
         position: relative; // to use the active class
-        line-height: 7; // use the number without units, because I say the total height of the line is 6 font size
+        padding: 2rem 0;
         a {
             text-transform: uppercase;
         }
+    }
+    .search_box {
+        border-bottom: 4px solid $accenture;
     }
 
     .active {
@@ -31,6 +34,7 @@ header {
     /* webkit solution */
     ::-webkit-input-placeholder {
         text-align: right;
+        font-weight: bold;
     }
     /* mozilla solution */
     input:-moz-placeholder {
