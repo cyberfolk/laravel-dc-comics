@@ -29,4 +29,4 @@ Route::get('/news', [PageController::class, 'news'])->name('news');
 Route::get('/shop', [PageController::class, 'shop'])->name('shop');
 Route::get('/tv', [PageController::class, 'tv'])->name('tv');
 
-Route::resource('/admin/comics', ComicController::class);
+Route::resource('/admin/comics', ComicController::class, ['as' => 'admin']); //to rename resource root with 'admin' prefix

@@ -50,7 +50,7 @@ class ComicController extends Controller
         $comic->type = $request->type;
         $comic->save();
         // return to a get route POST/REDIRECT/GET
-        return to_route('comics.index');
+        return to_route('admin.comics.index');
     }
 
     /**

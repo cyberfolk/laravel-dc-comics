@@ -35,7 +35,7 @@
                             Admin
                         </button>
                         <div class="dropdown-menu" aria-labelledby="adminMenu">
-                            <a class="dropdown-item" href="{{route('comics.index')}}">comics</a>
+                            <a class="dropdown-item" href="{{route('admin.comics.index')}}">comics</a>
                         </div>
                     </div>
                     <!-- /.dropdown -->
