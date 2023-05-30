@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('page_title', 'Index')
+
 @section('content')
 
 <div class="container py-5">

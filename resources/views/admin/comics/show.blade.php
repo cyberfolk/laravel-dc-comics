@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+@section('page_title', 'Show')
 
 @section('content')
 
