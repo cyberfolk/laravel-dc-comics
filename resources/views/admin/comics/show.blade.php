@@ -16,6 +16,8 @@
             <div>{{$comic->sale_date}}</div>
             <div>{{$comic->type}}</div>
             <div>{{$comic->description}}</div>
+            <div>{{$comic->writers}}</div>
+            <div>{{$comic->artists}}</div>
         </div>
     </div>
 </div>

@@ -40,8 +40,18 @@
             <small id="typeHelper" class="text-muted">Type the type of the comic max 100 characters</small>
         </div>
         <div class="mb-3">
+            <label for="writers" class="form-label">Writers</label>
+            <input type="text" name="writers" id="writers" class="form-control" placeholder="Comic writers here" aria-describedby="writersHelper">
+            <small id="writersHelper" class="text-muted">Type the writers of the comic separate with ","</small>
+        </div>
+        <div class="mb-3">
+            <label for="artists" class="form-label">Artists</label>
+            <input type="text" name="artists" id="artists" class="form-control" placeholder="Comic artists here" aria-describedby="artistsHelper">
+            <small id="artistsHelper" class="text-muted">Type the artists of the comic separate with ","</small>
+        </div>
+        <div class="mb-3">
             <label for="description" class="form-label">Description</label>
-            <input type="text" name="description" id="description" class="form-control" placeholder="Comic description here " aria-describedby="descriptionHelper">
+            <input type="textarea" name="description" id="description" class="form-control" placeholder="Comic description here" aria-describedby="descriptionHelper" row="4">
             <small id="descriptionHelper" class="text-muted">Type the description of the comic max 1000 characters</small>
         </div>
         <button type="submit" class="btn btn-dark w-100 my-4">Save</button>
