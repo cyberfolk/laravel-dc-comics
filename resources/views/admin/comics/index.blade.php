@@ -45,13 +45,32 @@
                         <a class="btn btn-secondary text-light mb-1" href="{{route('admin.comics.edit', $comic->id )}}" title="Edit" role="button">
                             <i class="fas fa-pencil fa-sm fa-fw"></i>
                         </a>
-                        <form action="{{route('admin.comics.destroy', $comic->id)}}" method="post">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" class="btn btn-danger" title="Delete">
-                                <i class="fas fa-trash fa-sm fa-fw"></i>
-                            </button>
-                        </form>
+
+                        <button type="button" class="btn btn-danger" title="Delete" data-bs-toggle="modal" data-bs-target="#modal-{{$comic->id}}" >
+                            <i class="fas fa-trash fa-sm fa-fw"></i>
+                        </button>
+
+                        <div class="modal fade" id="modal-{{$comic->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Delete {{$comic->title}}</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body"> Are you sure you to want to delete this element? This is a destructive action. </div>
+                               <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">Close</button>
+                                    <form action="{{route('admin.comics.destroy', $comic->id)}}" method="post">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger">Confirm</button>
+                                    </form>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+
 
                     </td>
                 </tr>
