@@ -18,11 +18,14 @@ class ComicSeeder extends Seeder
         $comics = config('comics');
 
         foreach ($comics as $comic) {
+            $price_float = floatval("price_str");
+
             $newComic = new Comic();
             $newComic->title = $comic['title'];
             $newComic->description = $comic['description'];
             $newComic->thumb = $comic['thumb'];
-            $newComic->price = $comic['price'];
+            $price_str = str_replace("$", "", $comic['price']); //Remove "$" from $price_str
+            $newComic->price = floatval($price_str); //Convert $price_str to float
             $newComic->series = $comic['series'];
             $newComic->sale_date = $comic['sale_date'];
             $newComic->type = $comic['type'];

@@ -10,7 +10,7 @@
             <img src="{{$comic->thumb}}" alt="{{$comic->title}}" class="img-fluid">
         </div>
         <div class="col-6">
-            <div>{{$comic->price}}</div>
+            <div>${{$comic->price}}</div>
             <div>{{$comic->series}}</div>
             <div>{{$comic->sale_date}}</div>
             <div>{{$comic->type}}</div>

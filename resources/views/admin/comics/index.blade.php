@@ -36,7 +36,7 @@
                     <td scope="row">{{$comic->id}}</td>
                     <td><img height="100" src="{{$comic->thumb}}" alt="{{$comic->title}}"></td>
                     <td>{{$comic->title}}</td>
-                    <td>{{$comic->price}}</td>
+                    <td>${{$comic->price}}</td>
                     <td>{{$comic->description}}</td>
                     <td>{{$comic->series}}</td>
                     <td>{{$comic->sale_date}}</td>

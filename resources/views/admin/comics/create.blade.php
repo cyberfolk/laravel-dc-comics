@@ -29,7 +29,7 @@
         </div>
         <div class="mb-3">
             <label for="sale_date" class="form-label">Sale date</label>
-            <input type="text" name="sale_date" id="sale_date" class="form-control" placeholder="Comic sale_date here " aria-describedby="sale_dateHelper">
+            <input type="date" name="sale_date" id="sale_date" class="form-control" placeholder="Comic sale_date here " aria-describedby="sale_dateHelper">
             <small id="sale_dateHelper" class="text-muted">Type the sale date of the comic max 10 characters</small>
         </div>
         <div class="mb-3">
