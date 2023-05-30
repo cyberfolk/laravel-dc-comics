@@ -20,10 +20,10 @@
                     <th>Thumb</th>
                     <th>Title</th>
                     <th>Price</th>
+                    <th>Description</th>
                     <th>Series</th>
-                    <th>sale_date</th>
-                    <th>Price</th>
-                    <th>Type</th>
+                    <th style="width: 8%">sale_date</th>
+                    <th style="width: 10%">Type</th>
                     <th>actions</th>
                 </tr>
             </thead>
@@ -34,20 +34,27 @@
                     <td><img height="100" src="{{$comic->thumb}}" alt="{{$comic->title}}"></td>
                     <td>{{$comic->title}}</td>
                     <td>{{$comic->price}}</td>
+                    <td>{{$comic->description}}</td>
                     <td>{{$comic->series}}</td>
                     <td>{{$comic->sale_date}}</td>
-                    <td>{{$comic->price}}</td>
                     <td>{{$comic->type}}</td>
                     <td>
-                        <a href="{{route('admin.comics.show', $comic->id)}}" title="View" class="text-decoration-none">
+                        <a class="btn btn-primary mb-1" href="{{route('admin.comics.show', $comic->id )}}" title="View" role="button">
                             <i class="fas fa-eye fa-sm fa-fw"></i>
                         </a>
-                        <a href="" title="Edit" class="text-decoration-none">
+
+                        <a class="btn btn-secondary text-light mb-1" href="{{route('admin.comics.edit', $comic->id )}}" title="Edit" role="button">
                             <i class="fas fa-pencil fa-sm fa-fw"></i>
                         </a>
-                        <a href="" title="Delete" class="text-decoration-none">
-                            <i class="fas fa-trash fa-sm fa-fw"></i>
-                        </a>
+
+                        <form action="{{route('admin.comics.destroy', $comic->id)}}" method="post">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger" title="Delete">
+                                <i class="fas fa-trash fa-sm fa-fw"></i>
+                            </button>
+                        </form>
+
                     </td>
                 </tr>
                 @empty
