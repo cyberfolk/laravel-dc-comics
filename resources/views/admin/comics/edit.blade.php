@@ -21,12 +21,12 @@
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">Price</label>
-            <input type="number" step="0.01" name="price" id="price" class="form-control" placeholder="Comic price here" value="{{$comic->price}}" aria-describedby="priceHelper">
+            <input type="number" step="0.01" name="price" id="price" class="form-control" placeholder="Comic price here" value="{{$comic->price}}" aria-describedby="priceHelper" required>
             <small id="priceHelper" class="text-muted">Type the price of the comic max 10 characters</small>
         </div>
         <div class="mb-3">
             <label for="series" class="form-label">Series</label>
-            <input type="text" name="series" id="series" class="form-control" placeholder="Comic series here" value="{{$comic->series}}" aria-describedby="seriesHelper">
+            <input type="text" name="series" id="series" class="form-control" placeholder="Comic series here" value="{{$comic->series}}" aria-describedby="seriesHelper" required>
             <small id="seriesHelper" class="text-muted">Type the series of the comic max 100 characters</small>
         </div>
         <div class="mb-3">
@@ -36,7 +36,7 @@
         </div>
         <div class="mb-3">
             <label for="type" class="form-label">Type</label>
-            <input type="text" name="type" id="type" class="form-control" placeholder="Comic type here" value="{{$comic->type}}" aria-describedby="typeHelper">
+            <input type="text" name="type" id="type" class="form-control" placeholder="Comic type here" value="{{$comic->type}}" aria-describedby="typeHelper" required>
             <small id="typeHelper" class="text-muted">Type the type of the comic max 100 characters</small>
         </div>
         <div class="mb-3">
