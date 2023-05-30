@@ -11,13 +11,34 @@
             <img src="{{$comic->thumb}}" alt="{{$comic->title}}" class="img-fluid">
         </div>
         <div class="col-6">
-            <div>${{$comic->price}}</div>
-            <div>{{$comic->series}}</div>
-            <div>{{$comic->sale_date}}</div>
-            <div>{{$comic->type}}</div>
-            <div>{{$comic->description}}</div>
-            <div>{{$comic->writers}}</div>
-            <div>{{$comic->artists}}</div>
+            <div>
+                <strong>Price: </strong>
+                <span>${{$comic->price}}</span>
+            </div>
+            <div>
+                <strong>Series: </strong>
+                <span>{{$comic->series}}</span>
+            </div>
+            <div>
+                <strong>Sale data: </strong>
+                <span>{{$comic->sale_date}}</span>
+            </div>
+            <div>
+                <strong>Type: </strong>
+                <span>{{$comic->type}}</span>
+            </div>
+            <div>
+                <strong>Description:</strong>
+                <span>{{$comic->description}}</span>
+            </div>
+            <div>
+                <strong>Writers: </strong>
+                <span>{{$comic->writers}}</span>
+            </div>
+            <div>
+                <strong>Artists: </strong>
+                <span>{{$comic->artists}}</span>
+            </div>
         </div>
     </div>
 </div>
