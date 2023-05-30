@@ -3,6 +3,9 @@
 @section('content')
 
 <div class="container py-5">
+
+    @include('partials.session_message')
+
     <div class="d-flex justify-content-between align-items-center py-5">
         <h1 class="fw-bold"> Admin Comics</h1>
         <a href="{{route('admin.comics.create')}}" class="btn btn-dark d-block">

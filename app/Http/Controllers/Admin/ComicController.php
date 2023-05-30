@@ -50,7 +50,7 @@ class ComicController extends Controller
         $comic->type = $request->type;
         $comic->save();
         // return to a get route POST/REDIRECT/GET
-        return to_route('admin.comics.index');
+        return to_route('admin.comics.index')->with('message', "Comic: $comic->title created succesfully");
     }
 
     /**
@@ -96,6 +96,6 @@ class ComicController extends Controller
     public function destroy(Comic $comic)
     {
         $comic->delete();
-        return to_route('admin.comics.index')->with('message', 'comic deleted');
+        return to_route('admin.comics.index')->with('message', "Comic: $comic->title deleted succesfully");
     }
 }
