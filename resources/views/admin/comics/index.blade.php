@@ -22,13 +22,15 @@
                 <caption>Table Name</caption>
                 <tr>
                     <th>ID</th>
-                    <th>Thumb</th>
-                    <th>Title</th>
+                    <th >Thumb</th>
+                    <th >Title</th>
                     <th>Price</th>
-                    <th>Description</th>
+                    <th style="width: 40%">Description</th>
                     <th>Series</th>
-                    <th style="width: 8%">sale_date</th>
-                    <th style="width: 10%">Type</th>
+                    <th style="width: 10%">sale_date</th>
+                    <th >Type</th>
+                    <th>Writers</th>
+                    <th>Artists</th>
                     <th>actions</th>
                 </tr>
             </thead>
@@ -43,6 +45,8 @@
                     <td>{{$comic->series}}</td>
                     <td>{{$comic->sale_date}}</td>
                     <td>{{$comic->type}}</td>
+                    <td>{{$comic->writers}}</td>
+                    <td>{{$comic->artists}}</td>
                     <td>
                         <a class="btn btn-primary mb-1" href="{{route('admin.comics.show', $comic->id )}}" title="View" role="button">
                             <i class="fas fa-eye fa-sm fa-fw"></i>
