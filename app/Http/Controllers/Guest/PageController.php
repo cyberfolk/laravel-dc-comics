@@ -54,8 +54,4 @@ class PageController extends Controller
         $banner = config('banner');
         return view('comics', compact('comics', 'banner'));
     }
-    public function comic(Comic $comic)
-    {
-        return view('comic', compact('comic'));
-    }
 }
