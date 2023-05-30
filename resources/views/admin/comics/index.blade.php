@@ -42,11 +42,9 @@
                         <a class="btn btn-primary mb-1" href="{{route('admin.comics.show', $comic->id )}}" title="View" role="button">
                             <i class="fas fa-eye fa-sm fa-fw"></i>
                         </a>
-
                         <a class="btn btn-secondary text-light mb-1" href="{{route('admin.comics.edit', $comic->id )}}" title="Edit" role="button">
                             <i class="fas fa-pencil fa-sm fa-fw"></i>
                         </a>
-
                         <form action="{{route('admin.comics.destroy', $comic->id)}}" method="post">
                             @csrf
                             @method('DELETE')
