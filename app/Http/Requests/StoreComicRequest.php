@@ -44,18 +44,18 @@ class StoreComicRequest extends FormRequest
     public function messages()
     {
         return [
-            'title.required' => 'The title is required',
-            'title.max' => 'The title must contain no more than 100 characters',
-            'thumb.max' => 'The thumb must contain no more than 200 characters',
-            'price.required' => 'The price is required',
-            'price.decimal' => 'The price must contain no more than 2 decimal digits',
-            'series.max' => 'The series is required',
-            'series.max' => 'The series must contain no more than 100 characters',
-            /*             'sale_date.date' => 'The sale date must be data type',
-            'sale_date.before_or_equal' => 'The sale date must be no more than today',
-            'sale_date.after' => 'The sale date must be after 1900-01-01',
- */            'type' => 'The type is required',
-            'type.max' => 'The type must contain no more than 100 characters',
+            'title.required' => 'Il titolo è richiesto',
+            'title.max' => 'Il titolo non deve avere più di 100 caratteri',
+            'thumb.max' => 'Il Thumb non deve avere più di 100 caratteri',
+            'price.required' => 'Il prezzo è richiesto',
+            'price.decimal' => 'Il prezzo non puà contenere più di 2 decimali',
+            'series.max' => 'La serie è richiesta',
+            'series.max' => 'La sewrie non puà contenere più di 100 caratteriu',
+            'sale_date.date' => 'La data di vendita non è una data valida',
+            'sale_date.before_or_equal' => 'La data di vendita non può essere successiva a oggi',
+            'sale_date.after' => 'La data di vendita non puà essere inferiore a 1900-01-01',
+            'type' => 'Il tipo è richiesto',
+            'type.max' => 'Il tipo non può contenere più di 100 caratteri',
         ];
     }
 }
