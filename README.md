@@ -2,7 +2,7 @@
 
 **Initial commit**: 07/02/23
 
-**Tecnologie:** laravel, php, blade, sql, js, html, css e bootstrap.
+**Tecnologie:** laravel, PHP, Blade, MySql, Javascript, HTML, CSS e Bootstrap.
 
 🦸🏻‍♂️ DC Comics! Un progetto che ci ha accompagnato durante il percorso di Boolean, di volta in volta veniva aggiornato con le tecnologia apprese a lezione, questa è l'ultima versione In questo esercizio abbiamo implementato le CRUD (create/read/update/delete) per gestire la persistenza dei Fumetti nel Database poi tramite le rotte e il PageControler abbiamo gestito la navigazione tra le varie pagine del sito. Per finire con il template Blade ho potuto popolare il codice html in modo dinamico.
 
