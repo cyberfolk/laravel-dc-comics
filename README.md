@@ -1,6 +1,6 @@
 # DC Comics - Replica web-site
 
-**Initial commit**: 07/02/23
+**Initial commit**: 07/05/23
 
 **Tecnologie:** laravel, PHP, Blade, MySql, Javascript, HTML, CSS e Bootstrap.
 
