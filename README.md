@@ -9,6 +9,7 @@
 🔗 Repository:
 https://github.com/cyberfolk/laravel-dc-comics
 
+## Pages Preview
 <div>
   <img src="./public/screencapture-1.png" width="32%" style="margin: 4px;"/>
   <img src="./public/screencapture-4.png" width="32%" style="margin: 4px;"/>
