@@ -9,22 +9,27 @@
 🔗 Repository:
 https://github.com/cyberfolk/laravel-dc-comics
 
+<div>
+  <img src="./public/screencapture-1.png" width="32%" style="margin: 4px;"/>
+  <img src="./public/screencapture-4.png" width="32%" style="margin: 4px;"/>
+  <img src="./public/screencapture-2.png" width="32%" style="margin: 4px;"/>
+</div>
+
 ## Milestone
+- [x] Creare un progetto Laravel 9 per gestire un archivio di fumetti.
+- [x] Creare [app.blade.php](resources/views/layouts/app.blade.php) un file di layout in cui inserire la struttura comune di tutte le pagine del sito web
+- [x] Strutturare il layout tramite partials.
+- [x] Aggiungere più pagine che condividono lo stesso layout
+- [x] Creare la rotta `comics` per visualizzare la lista di tutti i fumetti
+- [x] Recuperare i fumetti dal file [comics.php](config/comics.php) inserito nella cartella config
+- [x] Riciclare il template Sass dall'esercizio [vite-comics](https://github.com/cyberfolk/vite-comics).
+- [x] Tramite gli appositi comandi artisan creare un model con relativa migration e un resource-controller.
+- [x] Definire le operazioni CRUD con le relative view: `index()`, `show()`, `create()` e `store()`
+- [x] Creare il seeder per la tabella **Comics** utilizzando il file in [comics.php](config/comics.php).
+- [x] Tramite javascript, quando l'utente clicca sul pulsante "delete", chiedere conferma della cancellazione, prima di eliminare l'elemento.
+- [x] Validare gli input ricevuti in fase di creazione e modifica, rispondendo con errori chiari e in italiano.
+- [x] Utilizzare le Request personalizzate per validare i dati
 
--   Creare un progetto Laravel 9 per gestire un archivio di fumetti.
--   Ceate [app.blade.php](resources/views/layouts/app.blade.php) un file di layout in cui inserire la struttura comune di tutte le pagine del sito web
--   Strutturare il layout tramite partials.
--   Aggiungere più pagine che condividono lo stesso layout
--   Creare una rotta per visualizzare la lista di tutti i fumetti recuperati da un file inserito nella cartella config e abbellite il tutto sfruttando Sass.
--   Tramite gli appositi comandi artisan creare un model con relativa migration e un resource-controller.
--   Definire le operazioni CRUD con le relative view:
+## Admin-page
+<img src="./public/screencapture-3.png"/>
 
-    -   index()
-    -   show()
-    -   create()
-    -   store()
-
--   Creare il seeder per la tabella **Comics** utilizzando il file in [comics.php](config/comics.php).
--   Tramite javascript, quando l'utente clicca sul pulsante "delete", chiedere conferma della cancellazione, prima di eliminare l'elemento.
--   Validare gli input ricevuti in fase di creazione e modifica, rispondendo con errori chiari e in italiano.
--   Utilizzare le Request personalizzate per validare i dati
