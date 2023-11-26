@@ -24,8 +24,8 @@
 - [x] Using the appropriate artisanal commands, create a model with relative migration and a Resource Controller.
 - [x] Define the CRUD operations with the related views: `index()`, `show()`, `create()`, and `store()`
 - [x] Create the seeder for the **Comics** table using the file in [comics.php](config/comics.php).
-- [x] Via javascript, when the user clicks on the "delete" button, ask for confirmation of deletion before deleting the element.
-- [x] Validate the inputs received during the creation and modification phase, responding with clear errors and in Italian.
+- [x] Via JS, when the user clicks on the "delete" button, ask for confirmation of deletion before deleting the element.
+- [x] Validate the inputs received during the creation/modification phase, responding with clear errors and in Italian.
 - [x] Use custom requests to validate data
 
 ## Admin-page
