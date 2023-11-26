@@ -4,10 +4,7 @@
 
 **Tecnologie:** Laravel, PHP, Blade, MySql, Javascript, HTML, CSS e Bootstrap.
 
-🦸🏻‍♂️ DC Comics! Un progetto che ci ha accompagnato durante il percorso di Boolean, di volta in volta veniva aggiornato con le tecnologia apprese a lezione, questa è l'ultima versione In questo esercizio abbiamo implementato le CRUD (create/read/update/delete) per gestire la persistenza dei Fumetti nel Database poi tramite le rotte e il PageControler abbiamo gestito la navigazione tra le varie pagine del sito. Per finire con il template Blade ho potuto popolare il codice html in modo dinamico.
-
-🔗 Repository:
-https://github.com/cyberfolk/laravel-dc-comics
+**Info:** 🦸🏻‍♂️ DC Comics! A project that accompanied us during the Boolean journey, has been updated from time to time with the technology learned in lessons, this is the latest version. In this exercise we implemented the CRUD (create/read/update/delete) to manage the persistence of the Comics in the Database then through the routes and the PageControler we managed the navigation between the various pages of the site. Finally, with the Blade template, I was able to populate the html code dynamically.
 
 ## Pages Preview
 <div>
@@ -17,19 +14,19 @@ https://github.com/cyberfolk/laravel-dc-comics
 </div>
 
 ## Milestone
-- [x] Creare un progetto Laravel 9 per gestire un archivio di fumetti.
-- [x] Creare [app.blade.php](resources/views/layouts/app.blade.php) un file di layout in cui inserire la struttura comune di tutte le pagine del sito web
-- [x] Strutturare il layout tramite partials.
-- [x] Aggiungere più pagine che condividono lo stesso layout
-- [x] Creare la rotta `comics` per visualizzare la lista di tutti i fumetti
-- [x] Recuperare i fumetti dal file [comics.php](config/comics.php) inserito nella cartella config
-- [x] Riciclare il template Sass dall'esercizio [vite-comics](https://github.com/cyberfolk/vite-comics).
-- [x] Tramite gli appositi comandi artisan creare un model con relativa migration e un resource-controller.
-- [x] Definire le operazioni CRUD con le relative view: `index()`, `show()`, `create()` e `store()`
-- [x] Creare il seeder per la tabella **Comics** utilizzando il file in [comics.php](config/comics.php).
-- [x] Tramite javascript, quando l'utente clicca sul pulsante "delete", chiedere conferma della cancellazione, prima di eliminare l'elemento.
-- [x] Validare gli input ricevuti in fase di creazione e modifica, rispondendo con errori chiari e in italiano.
-- [x] Utilizzare le Request personalizzate per validare i dati
+- [x] Create a Laravel 9 project to manage a comic archive.
+- [x] Create [app.blade.php](resources/views/layouts/app.blade.php) a layout file in which to insert the common structure of all the pages of the website
+- [x] Structure the layout using partials.
+- [x] Add multiple pages that share the same layout
+- [x] Create the `comics` route to display the list of all comics
+- [x] Retrieve the comics from the [comics.php](config/comics.php) file placed in the config folder
+- [x] Recycle the Sass template from the [vite-comics](https://github.com/cyberfolk/vite-comics) exercise.
+- [x] Using the appropriate artisanal commands, create a model with relative migration and a Resource Controller.
+- [x] Define the CRUD operations with the related views: `index()`, `show()`, `create()`, and `store()`
+- [x] Create the seeder for the **Comics** table using the file in [comics.php](config/comics.php).
+- [x] Via javascript, when the user clicks on the "delete" button, ask for confirmation of deletion before deleting the element.
+- [x] Validate the inputs received during the creation and modification phase, responding with clear errors and in Italian.
+- [x] Use custom requests to validate data
 
 ## Admin-page
 <img src="./public/screencapture-3.png"/>
